@@ -1,3 +1,9 @@
+*   Freeze `ActiveSupport::Duration#parts` and remove writer methods
+
+    Durations are meant to be value objects and should not be mutated.
+    
+    *Andrew White*
+
 *   Add `expires_at` argument to `ActiveSupport::Cache` `write` and `fetch` to set a cache entry TTL as an absolute time.
 
     ```ruby
